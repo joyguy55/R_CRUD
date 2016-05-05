@@ -1,0 +1,85 @@
+
+// app/assets/stylesheets/application.css.sass
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.flex-container{
+  display:flex;
+}
+
+.glyphicon{
+  font-size: 64px;
+  margin:auto;
+  padding: 20px;
+}
+
+.sidebar-main{
+  width:95px;
+  max-width:95px;
+  min-height:100% !important;
+  position: relative;
+  flex-grow:1;
+  background:gray;
+}
+
+.sidebar{
+  width:240px;
+  max-width:240px;
+  min-height:100% !important;
+  position: relative;
+  flex-grow:2;
+}
+
+.dashboard{
+  flex-grow:9;
+  max-width:1200px;
+}
+
+html, body {
+  height:100%;
+}
+
+.clearfix{
+  margin:auto;
+}
+
+h1{padding:19px;}
+
+table{padding: 8px;}
+th{padding: 8px;}
+tr{padding: 8px;}
+td{padding: 8px;
+  max-width: 300px;
+  white-space: nowrap;
+      overflow: hidden;}
+
+.input-group{
+  max-width: 600px;
+  margin: 10px;
+}
+
+.form-control .input-group-addon{
+  height: 50px;
+}
+
+.field{
+  height: 50px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RCrud</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class=flex-container>
+
+  <div class="item sidebar-main" style="background:gray;" style="height:100%;">
+    <span class="glyphicon glyphicon-th-list" style="font-size:28px;" aria-hidden="true"></span>
+  </div>
+
+  <div class="item sidebar">
+    <div>
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="/translate">Translations</a></li>
+          </ul>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <div id="item navbar" class="navbar-collapse collapse" >
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+              <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+              </form>
+
+    </div flex-container>
+      <%= yield %>
+    </div>
+  </div>
+
+</body>
+</html>

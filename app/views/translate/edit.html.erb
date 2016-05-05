@@ -1,0 +1,31 @@
+
+<%= form_for(@translate) do |f| %>
+
+
+
+  <!-- <span class="input-group-addon">Key</span> -->
+
+  <div class="row">
+    <div class="form-group col-md-4">
+        <label for="exampleTextarea">Locale</label>
+        <%= f.text_area :key, class: 'form-control', id:"exampleTextarea", rows:"1"%>
+    </div>
+  </div>
+<div class="row">
+    <div class="form-group col-md-4">
+      <label for="exampleTextarea">Key</label>
+      <%= f.text_area :key, class: 'form-control', id:"exampleTextarea", rows:"1"%>
+    </div>
+  </div>
+<div class="row">
+    <fieldset class="form-group col-md-6">
+      <label for="exampleTextarea">Value</label>
+      <%= f.text_area :value, class: 'form-control', id:"exampleTextarea", rows:"3" %>
+    </fieldset>
+  </div>
+
+
+    <%= f.submit 'Update', class:'btn btn-default'%>
+
+
+<% end %>
