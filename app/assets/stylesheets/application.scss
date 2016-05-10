@@ -26,9 +26,10 @@
 }
 
 .glyphicon{
-  font-size: 64px;
+  font-size: 100px;
   margin:auto;
   padding: 20px;
+  color: #5B6778;
 }
 
 .sidebar-main{
@@ -37,7 +38,8 @@
   min-height:100% !important;
   position: relative;
   flex-grow:1;
-  background:gray;
+  background:#313541;
+
 }
 
 .sidebar{
@@ -46,6 +48,7 @@
   min-height:100% !important;
   position: relative;
   flex-grow:2;
+  background: #282C37;
 }
 
 .dashboard{
@@ -72,7 +75,7 @@ td{padding: 8px;
       overflow: hidden;}
 
 .input-group{
-  max-width: 600px;
+  max-width: 800px;
   margin: 10px;
 }
 

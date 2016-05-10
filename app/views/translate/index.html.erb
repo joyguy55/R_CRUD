@@ -15,6 +15,7 @@
         </tr>
       </thead>
 
+
       <tbody>
         <% @translations.each do |translate| %>
         <tr>
@@ -29,4 +30,8 @@
           <% end %>
         </tr>
       <tbody>
+
     </table>
+
+<div id='work'></div>
+<%= react_component('ValueList' , {allval: raw(render)})%>

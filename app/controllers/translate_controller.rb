@@ -7,6 +7,7 @@ class TranslateController < ApplicationController
 
   def show
     @translate = Translate.find params[:id]
+    @allval = @translate.value
   end
 
   def new
@@ -54,5 +55,5 @@ class TranslateController < ApplicationController
   end
 
   # def filter
-  #   @translate = Translate.find()
+  #   result = @translatations.select do |search|
   # end

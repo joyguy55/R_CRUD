@@ -3,12 +3,11 @@
 <head>
   <title>RCrud</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class=flex-container>
 
-  <div class="item sidebar-main" style="background:gray;" style="height:100%;">
+  <div class="item sidebar-main" style="height:100%;">
     <span class="glyphicon glyphicon-th-list" style="font-size:28px;" aria-hidden="true"></span>
   </div>
 
@@ -21,6 +20,11 @@
   </div>
 
   <div class="dashboard">
+
+    <form class="navbar-form navbar-left">
+      <input type="text" class="form-control" placeholder="Search...">
+    </form>
+
     <div id="item navbar" class="navbar-collapse collapse" >
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Dashboard</a></li>
@@ -28,14 +32,14 @@
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Help</a></li>
               </ul>
-              <form class="navbar-form navbar-right">
-                <input type="text" class="form-control" placeholder="Search...">
-              </form>
 
     </div flex-container>
       <%= yield %>
     </div>
+
   </div>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 </body>
 </html>
