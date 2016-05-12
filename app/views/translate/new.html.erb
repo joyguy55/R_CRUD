@@ -1,1 +1,6 @@
 
+<%= form_for @person, url: {action: "create"} do |f| %>
+  <%= f.text_field :first_name %>
+  <%= f.text_field :last_name %>
+  <%= submit_tag 'Create' %>
+<% end %>

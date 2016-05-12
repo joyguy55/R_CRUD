@@ -1,18 +1,14 @@
-var crud_component = React.createClass({
-  propTypes:{
-    value: React.PropTypes.string
-  },
 
-    render: function() {
-      return(
-      <div>
-          <p>It's working it's working.("Ani")</p>
-            <div>{this.props.value}</div>
-      </div>
-            );
-    }
+
+TestyComponent = React.createClass({
+  render: function() {
+    return (
+      <h1>Boo</h1>
+    );
+  }
 });
 
-ReactDOM.render(<crud_component />, document.getElementById('work'));
+ReactDOM.render(<TestyComponent/>, document.getElementById('work'));
+//ReactDOM.render(<h1>Hi there</h1>, document.getElementById('work'));
 
 // issue with keys
