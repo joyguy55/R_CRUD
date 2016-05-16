@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
-    resources :translate
-    root 'translate#index'
+  root to: 'site#index'
+
+  namespace :api do
+    namespace :v1 do
+      resources :items, only: [:index, :create, :destroy, :update]
+      end
+    end
+
+  # resources :translate
+  # root 'translate#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -11,12 +11,15 @@
 // about supported directives.
 //
 
-
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require react
 //= require react_ujs
-//= require_tree ./components
+//= require ./components/_new_items
+//= require ./components/_all_items
+//= require ./components/_body
+//= require ./components/_header
+//= require ./components/_main
 //= require_tree .

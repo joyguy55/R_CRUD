@@ -1,5 +1,4 @@
 
-
 TestyComponent = React.createClass({
   render: function() {
     return (
